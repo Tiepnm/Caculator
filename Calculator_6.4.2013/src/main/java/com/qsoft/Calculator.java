@@ -8,7 +8,7 @@ package com.qsoft;
  */
 public class Calculator {
 
-    public int addFromArrayString(String[] numbers) {
+    private int addFromArrayString(String[] numbers) {
         int sum = 0;
         boolean exist = false;
         String negatives = "";
@@ -28,32 +28,35 @@ public class Calculator {
         }
         return sum;
     }
+    private String afterReplaceString(String numbers)
+    {
+        numbers = numbers.replace("\n", ",");
+        String delimiter = "";
+        if (numbers.contains("//")) {
 
+            if (numbers.contains("[") && numbers.contains("]")) {
+                int end = numbers.indexOf("]");
+                int start = numbers.indexOf("[");
+                delimiter = numbers.substring(start + 1, end);
+                numbers = numbers.substring(end + 1, numbers.length());
+            } else {
+                delimiter = numbers.substring(2, 3);
+                numbers = numbers.substring(3, numbers.length());
+            }
+
+
+            numbers = numbers.replace(delimiter, ",");
+        }
+        return numbers;
+    }
     public int sum(String numbers) {
         if ("".equals(numbers)) {
             return 0;
 
         } else {
-            numbers = numbers.replace("\n", ",");
-            String delimiter = "";
-            if (numbers.contains("//")) {
-
-                if (numbers.contains("[") && numbers.contains("]")) {
-                    int end = numbers.indexOf("]");
-                    int start = numbers.indexOf("[");
-                    delimiter = numbers.substring(start + 1, end);
-                    numbers = numbers.substring(end + 1, numbers.length());
-                } else {
-                    delimiter = numbers.substring(2, 3);
-                    numbers = numbers.substring(3, numbers.length());
-                }
-
-
-                numbers = numbers.replace(delimiter, ",");
-            }
+            numbers = afterReplaceString(numbers);
             String[] items = numbers.split(",");
             return addFromArrayString(items);
-
         }
     }
 }
