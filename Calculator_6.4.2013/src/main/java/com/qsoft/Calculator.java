@@ -38,8 +38,15 @@ public class Calculator {
             String delimiter = "";
             if (numbers.contains("//")) {
 
+                if (numbers.contains("[") && numbers.contains("]")) {
+                    int end = numbers.indexOf("]");
+                    int start = numbers.indexOf("[");
+                    delimiter = numbers.substring(start + 1, end);
+                    numbers = numbers.substring(end + 1, numbers.length());
+                } else {
                     delimiter = numbers.substring(2, 3);
                     numbers = numbers.substring(3, numbers.length());
+                }
 
 
                 numbers = numbers.replace(delimiter, ",");
