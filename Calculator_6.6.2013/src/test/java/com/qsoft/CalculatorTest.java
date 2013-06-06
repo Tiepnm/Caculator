@@ -85,8 +85,14 @@ public class CalculatorTest {
     @Test
     public void testMultiDelimiters()
     {
-        int sum = calculator.sum("//[*][%]\\n1*2%3");
-        Assert.assertEquals(15, sum);
+        int sum = calculator.sum("//[*][%]\n1*2%3");
+        Assert.assertEquals(6, sum);
+    }
+    @Test
+    public void testOtherMultiDelimiters()
+    {
+        int sum = calculator.sum("//[*][%][***]\n1*2%3***4");
+        Assert.assertEquals(10, sum);
     }
 
 }
