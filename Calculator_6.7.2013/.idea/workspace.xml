@@ -81,8 +81,11 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="36" selection-start="396" selection-end="396" vertical-scroll-proportion="0.8553459">
-              <folding />
+            <state line="65" column="32" selection-start="1978" selection-end="1978" vertical-scroll-proportion="0.7421384">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1739#1747#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -515,8 +518,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="396" selection-end="396" vertical-scroll-proportion="0.8553459">
-          <folding />
+        <state line="65" column="32" selection-start="1978" selection-end="1978" vertical-scroll-proportion="0.7421384">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1739#1747#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

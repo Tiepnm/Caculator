@@ -1,5 +1,8 @@
 package com.qsoft;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: tiepnm
@@ -39,21 +42,34 @@ public class Calculator {
         return sum;
     }
 
+    private void getListDelimiter(String s, List<String> list) {
+        int start = s.indexOf("[");
+        int end = s.indexOf("]");
+        if (s.contains("[")) {
+            list.add(s.substring(start + 1, end));
+            s = s.substring(end + 1, s.length());
+            getListDelimiter(s, list);
+        }
+    }
+
     private String replaceString(String numbers) {
-        numbers = numbers.replace("\n", ",");
         String delimiter = "";
+        numbers = numbers.replace("\n", ",");
         if (numbers.contains("//")) {
 
             if (numbers.contains("[") && numbers.contains("]")) {
-                int end = numbers.indexOf("]");
-                int start = numbers.indexOf("[");
-                delimiter = numbers.substring(start + 1, end);
-                numbers = numbers.substring(end + 1, numbers.length());
+                List<String> list = new ArrayList<String>();
+
+                getListDelimiter(numbers, list);
+                numbers = numbers.substring(numbers.lastIndexOf("]") + 1, numbers.length());
+                for (String delimiterItem : list) {
+                    numbers = numbers.replace(delimiterItem, ",");
+                }
+
             } else {
                 delimiter = numbers.substring(2, 3);
                 numbers = numbers.substring(3, numbers.length());
             }
-
             numbers = numbers.replace(delimiter, ",");
         }
         return numbers;
