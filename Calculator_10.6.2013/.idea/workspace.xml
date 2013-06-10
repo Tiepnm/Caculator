@@ -61,7 +61,7 @@
       <file leaf-file-name="TestCalculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="31" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0">
+            <state line="10" column="25" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +72,7 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="19" selection-start="583" selection-end="583" vertical-scroll-proportion="0.17297298">
+            <state line="20" column="33" selection-start="620" selection-end="620" vertical-scroll-proportion="0.81621623">
               <folding />
             </state>
           </provider>
@@ -245,35 +245,7 @@
       <recent name="com.qsoft" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCalculator.testDelimitersCanBeOfLengths">
-    <configuration default="false" name="TestCalculator.testAddNewLine" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Calculator_10.6.2013" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.TestCalculator" />
-      <option name="METHOD_NAME" value="testAddNewLine" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestCalculator">
     <configuration default="false" name="TestCalculator.testWithDelimiters" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -378,6 +350,34 @@
       <option name="MAIN_CLASS_NAME" value="com.qsoft.TestCalculator" />
       <option name="METHOD_NAME" value="testDelimitersCanBeOfLengths" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCalculator" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Calculator_10.6.2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.TestCalculator" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -513,11 +513,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddNewLine" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithDelimiters" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithNegative" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddBigger1000" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCalculator.testDelimitersCanBeOfLengths" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithDelimiters" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithNegative" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddBigger1000" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testDelimitersCanBeOfLengths" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCalculator" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -638,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="31" selection-start="1808" selection-end="1808" vertical-scroll-proportion="0.0">
+        <state line="10" column="25" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -647,7 +647,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="583" selection-end="583" vertical-scroll-proportion="0.17297298">
+        <state line="20" column="33" selection-start="620" selection-end="620" vertical-scroll-proportion="0.81621623">
           <folding />
         </state>
       </provider>
