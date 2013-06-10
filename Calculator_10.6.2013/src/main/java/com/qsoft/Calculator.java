@@ -13,8 +13,18 @@ public class Calculator {
         } else {
             String delimiter = ",";
             if (numbers.contains("//")) {
-                delimiter = numbers.substring(2, 3);
-                numbers = numbers.substring(3, numbers.length());
+                if (numbers.contains("[") && numbers.contains("]")) {
+                    int end = numbers.indexOf("]");
+                    int start = numbers.indexOf("[");
+                    delimiter = numbers.substring(start + 1, end);
+                    numbers = numbers.substring(end + 1, numbers.length());
+                }
+                else
+                {
+                    delimiter = numbers.substring(2, 3);
+                    numbers = numbers.substring(3, numbers.length());
+                }
+
             }
             numbers = numbers.replace(delimiter, ",");
             numbers = numbers.replace("\n", ",");
