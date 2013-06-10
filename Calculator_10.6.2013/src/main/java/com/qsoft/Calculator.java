@@ -23,7 +23,7 @@ public class Calculator {
             boolean exist = false;
             String negatives = "";
             for (String item : items) {
-                if ("".equals(item)) {
+                if ("".equals(item) || Integer.parseInt(item) > 1000) {
                     item = "0";
                 }
                 if (Integer.parseInt(item) < 0) {
