@@ -58,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestCalculator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TestCalculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="24" selection-start="939" selection-end="939" vertical-scroll-proportion="0.60330576">
+            <state line="47" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calculator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="48" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+            <state line="28" column="67" selection-start="846" selection-end="846" vertical-scroll-proportion="0.80243903">
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java" />
       </list>
     </option>
   </component>
@@ -519,8 +519,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901752" sideWeight="0.23519458" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958803" sideWeight="0.6712329" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3998477" sideWeight="0.7398374" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.6643836" order="1" side_tool="false" content_ui="combo" x="491" y="136" width="377" height="455" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33561644" sideWeight="0.6387195" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.74486303" order="1" side_tool="false" content_ui="combo" x="491" y="136" width="377" height="455" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.255137" sideWeight="0.6387195" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -601,17 +601,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="48" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="24" selection-start="939" selection-end="939" vertical-scroll-proportion="0.60330576">
+        <state line="47" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="67" selection-start="846" selection-end="846" vertical-scroll-proportion="0.80243903">
+          <folding />
         </state>
       </provider>
     </entry>
