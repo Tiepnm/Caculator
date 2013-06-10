@@ -61,7 +61,7 @@
       <file leaf-file-name="TestCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="39" selection-start="1082" selection-end="1092" vertical-scroll-proportion="0.54390246">
+            <state line="62" column="21" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.6783784">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +72,7 @@
       <file leaf-file-name="Calculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="33" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
+            <state line="6" column="3" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -245,7 +245,7 @@
       <recent name="com.qsoft" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCalculator.testWithDelimiters">
+  <component name="RunManager" selected="JUnit.TestCalculator.testWithNegative">
     <configuration default="false" name="TestCalculator" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -343,6 +343,34 @@
       <option name="PACKAGE_NAME" value="com.qsoft" />
       <option name="MAIN_CLASS_NAME" value="com.qsoft.TestCalculator" />
       <option name="METHOD_NAME" value="testWithDelimiters" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCalculator.testWithNegative" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Calculator_10.6.2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.TestCalculator" />
+      <option name="METHOD_NAME" value="testWithNegative" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -478,11 +506,12 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestCalculator" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TestCalculator.testMoreOne" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddNewLine" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithDelimiters" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithNegative" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -519,8 +548,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901752" sideWeight="0.23519458" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32958803" sideWeight="0.6712329" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3998477" sideWeight="0.7398374" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.74486303" order="1" side_tool="false" content_ui="combo" x="491" y="136" width="377" height="455" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.255137" sideWeight="0.6387195" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3292683" sideWeight="0.67636985" order="1" side_tool="false" content_ui="combo" x="491" y="136" width="377" height="455" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32363012" sideWeight="0.6387195" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -603,14 +632,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="33" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
+        <state line="6" column="3" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="39" selection-start="1082" selection-end="1092" vertical-scroll-proportion="0.54390246">
+        <state line="62" column="21" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.6783784">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

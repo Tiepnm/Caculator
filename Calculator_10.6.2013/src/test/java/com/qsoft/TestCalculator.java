@@ -43,14 +43,22 @@ public class TestCalculator {
         Assert.assertEquals(sum, 7);
 
     }
+
     @Test
     public void testWithDelimiters() {
         int sum = calculator.sum("//;\n1;2");
         Assert.assertEquals(3, sum);
     }
+
     @Test
     public void testWithOtherDelimiters() {
         int sum = calculator.sum("//@\n1@2,4,5");
         Assert.assertEquals(12, sum);
+    }
+
+    @Test(expected = NumberFormatException.class)
+    public void testWithNegative() {
+        int sum = calculator.sum("-1,-3");
+
     }
 }
