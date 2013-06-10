@@ -71,4 +71,9 @@ public class TestCalculator {
         int sum = calculator.sum("1001,2");
         Assert.assertEquals(2, sum);
     }
+    @Test
+    public void testDelimitersCanBeOfLengths() {
+        int sum = calculator.sum("//[***]\n4***5***6");
+        Assert.assertEquals(15, sum);
+    }
 }

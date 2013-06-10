@@ -61,7 +61,7 @@
       <file leaf-file-name="TestCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="30" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.5405405">
+            <state line="76" column="35" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.81621623">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +90,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestCalculator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java" />
       </list>
     </option>
   </component>
@@ -245,35 +245,7 @@
       <recent name="com.qsoft" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCalculator.testAddBigger1000">
-    <configuration default="false" name="TestCalculator.testMoreOne" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.qsoft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Calculator_10.6.2013" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.qsoft" />
-      <option name="MAIN_CLASS_NAME" value="com.qsoft.TestCalculator" />
-      <option name="METHOD_NAME" value="testMoreOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestCalculator.testDelimitersCanBeOfLengths">
     <configuration default="false" name="TestCalculator.testAddNewLine" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -389,6 +361,34 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestCalculator.testDelimitersCanBeOfLengths" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.qsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Calculator_10.6.2013" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.qsoft" />
+      <option name="MAIN_CLASS_NAME" value="com.qsoft.TestCalculator" />
+      <option name="METHOD_NAME" value="testDelimitersCanBeOfLengths" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -513,11 +513,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestCalculator.testMoreOne" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddNewLine" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithDelimiters" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithNegative" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddBigger1000" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddNewLine" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithDelimiters" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCalculator.testWithNegative" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCalculator.testAddBigger1000" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCalculator.testDelimitersCanBeOfLengths" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -645,7 +645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="30" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.5405405">
+        <state line="76" column="35" selection-start="1868" selection-end="1868" vertical-scroll-proportion="0.81621623">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
