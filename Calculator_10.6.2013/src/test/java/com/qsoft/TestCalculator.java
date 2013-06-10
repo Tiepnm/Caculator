@@ -58,7 +58,11 @@ public class TestCalculator {
 
     @Test(expected = NumberFormatException.class)
     public void testWithNegative() {
-        int sum = calculator.sum("-1,-3");
-
+        try {
+            int sum = calculator.sum("-1,-3");
+            Assert.fail("No exception caught :(");
+        } catch (NumberFormatException ex) {
+            Assert.assertEquals("negatives not allowed:-1,-3,", ex.getMessage());
+        }
     }
 }
