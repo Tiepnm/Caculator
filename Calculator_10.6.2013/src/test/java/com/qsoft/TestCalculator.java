@@ -63,6 +63,7 @@ public class TestCalculator {
             Assert.fail("No exception caught :(");
         } catch (NumberFormatException ex) {
             Assert.assertEquals("negatives not allowed:-1,-3,", ex.getMessage());
+            throw new NumberFormatException();
         }
     }
 }

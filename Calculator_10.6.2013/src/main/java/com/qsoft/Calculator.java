@@ -20,11 +20,20 @@ public class Calculator {
             numbers = numbers.replace("\n", ",");
             String[] items = numbers.split(",");
             int sum = 0;
+            boolean exist = false;
+            String negatives = "";
             for (String item : items) {
                 if ("".equals(item)) {
                     item = "0";
                 }
+                if (Integer.parseInt(item) < 0) {
+                    exist = true;
+                    negatives = negatives + item + ",";
+                }
                 sum += Integer.parseInt(item);
+            }
+            if (exist) {
+                throw new NumberFormatException("negatives not allowed:" + negatives);
             }
             return sum;
         }
