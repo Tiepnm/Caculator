@@ -58,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TestCalculator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TestCalculator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+            <state line="51" column="39" selection-start="1082" selection-end="1092" vertical-scroll-proportion="0.54390246">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calculator.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Calculator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="67" selection-start="846" selection-end="846" vertical-scroll-proportion="0.80243903">
+            <state line="30" column="33" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,8 +90,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestCalculator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java" />
       </list>
     </option>
   </component>
@@ -601,19 +601,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="34" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="30" column="33" selection-start="857" selection-end="857" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qsoft/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/qsoft/TestCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="67" selection-start="846" selection-end="846" vertical-scroll-proportion="0.80243903">
-          <folding />
+        <state line="51" column="39" selection-start="1082" selection-end="1092" vertical-scroll-proportion="0.54390246">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

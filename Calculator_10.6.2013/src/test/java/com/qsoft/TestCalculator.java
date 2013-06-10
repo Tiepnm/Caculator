@@ -48,4 +48,9 @@ public class TestCalculator {
         int sum = calculator.sum("//;\n1;2");
         Assert.assertEquals(3, sum);
     }
+    @Test
+    public void testWithOtherDelimiters() {
+        int sum = calculator.sum("//@\n1@2,4,5");
+        Assert.assertEquals(12, sum);
+    }
 }
