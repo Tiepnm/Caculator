@@ -66,4 +66,9 @@ public class TestCalculator {
             throw new NumberFormatException();
         }
     }
+    @Test
+    public void testAddBigger1000() {
+        int sum = calculator.sum("1001,2");
+        Assert.assertEquals(2, sum);
+    }
 }
