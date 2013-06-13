@@ -1,5 +1,7 @@
 package com.qsoft.dto;
 
+import java.util.Calendar;
+
 /**
  * Created by IntelliJ IDEA.
  * User: tiepnm
@@ -12,7 +14,7 @@ public class TransactionDTO {
     private Long timeStamp;
     private Double amount;
     private String description;
-
+    private  Calendar calendar = Calendar.getInstance() ;
     public void setAccountNumber(String accountNumber) {
         this.accountNumber =  accountNumber;
     }
@@ -30,5 +32,17 @@ public class TransactionDTO {
     }
     public long getTimeStamp() {
         return timeStamp;
+    }
+
+    public void setCalendar(Calendar calendar) {
+        this.calendar = calendar;
+    }
+
+    public Calendar getCalendar() {
+        return calendar;
+    }
+
+    public Double getAmount() {
+        return amount;
     }
 }

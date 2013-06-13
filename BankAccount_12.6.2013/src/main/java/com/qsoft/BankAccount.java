@@ -11,11 +11,11 @@ import com.qsoft.dto.TransactionDTO;
  * Date: 6/11/13
  * Time: 1:48 PM
  */
-public class BankingAccount {
+public class BankAccount {
 
     private BankingAccountDAO bankingAccountDAO;
     private Transaction transaction = new Transaction();
-
+    private TransactionDTO transactionDTO = new TransactionDTO();
     public BankingAccountDTO openAccount(String accountNumber) {
         BankingAccountDTO bankingAccountDTO = new BankingAccountDTO();
         bankingAccountDTO.setAccountNumber(accountNumber);
@@ -39,14 +39,15 @@ public class BankingAccount {
     public Transaction getTransaction() {
         return transaction;
     }
-
+    public TransactionDTO getTransactionDTO() {
+        return transactionDTO;
+    }
     public void deposit(BankingAccountDTO bankingAccountDTO, double amount) {
         bankingAccountDTO.setBalance(bankingAccountDTO.getBalance() + amount);
         bankingAccountDAO.save(bankingAccountDTO);
-        TransactionDTO transactionDTO = new TransactionDTO();
-        transactionDTO.setAccountNumber(bankingAccountDTO.getAccountNumber());
 
-        transactionDTO.setTimeStamp(1000L);
+        transactionDTO.setAccountNumber(bankingAccountDTO.getAccountNumber());
+        transactionDTO.setTimeStamp(transactionDTO.getCalendar().getTimeInMillis());
         transactionDTO.setAmount(amount);
         transactionDTO.setDescription("Deposit");
         transaction.save(transactionDTO);
@@ -55,6 +56,13 @@ public class BankingAccount {
     public void withDraw(BankingAccountDTO bankingAccountDTO, double amount) {
         bankingAccountDTO.setBalance(bankingAccountDTO.getBalance() - amount);
         bankingAccountDAO.save(bankingAccountDTO);
+
+
+        transactionDTO.setAccountNumber(bankingAccountDTO.getAccountNumber());
+        transactionDTO.setTimeStamp(transactionDTO.getCalendar().getTimeInMillis());
+        transactionDTO.setAmount(-amount);
+        transactionDTO.setDescription("With Draw");
+        transaction.save(transactionDTO);
     }
 
 }
