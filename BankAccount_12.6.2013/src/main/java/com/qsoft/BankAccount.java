@@ -5,6 +5,8 @@ import com.qsoft.dao.TransactionDAO;
 import com.qsoft.dto.BankingAccountDTO;
 import com.qsoft.dto.TransactionDTO;
 
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * User: tiepnm
@@ -65,4 +67,15 @@ public class BankAccount {
         transaction.save(transactionDTO);
     }
 
+    public List<TransactionDTO> getAllTransactions(String accountNumber) {
+        return transaction.getListTransaction(accountNumber);
+    }
+
+    public List<TransactionDTO> getAllTransactionsBetweenTime(String accountNumber, long timeStart, long timeEnd) {
+        return transaction.getAllTransactionBetweenTime(accountNumber, timeStart, timeEnd);
+    }
+
+    public  List<TransactionDTO> getNTransactions(String accountNumber) {
+        return transaction.getNTransactions(accountNumber);
+    }
 }

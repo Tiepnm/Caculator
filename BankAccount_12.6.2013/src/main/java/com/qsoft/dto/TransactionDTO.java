@@ -15,6 +15,16 @@ public class TransactionDTO {
     private Double amount;
     private String description;
     private  Calendar calendar = Calendar.getInstance() ;
+
+    public TransactionDTO() {
+
+    }
+    public TransactionDTO(String accountNumber, long timeStamp, String deposit) {
+        this.accountNumber = accountNumber;
+        this.timeStamp = timeStamp;
+
+    }
+
     public void setAccountNumber(String accountNumber) {
         this.accountNumber =  accountNumber;
     }

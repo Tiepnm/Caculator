@@ -29,6 +29,12 @@ public class Transaction {
     public List<TransactionDTO> getListTransaction(String accountNumber) {
         return transactionDao.getAllTransaction(accountNumber);
     }
+    public List<TransactionDTO> getAllTransactionBetweenTime(String accountNumber,long timeStart,long timeEnd) {
+        return transactionDao.getAllTransactionsBetweenTime(accountNumber, timeStart, timeEnd);
+    }
 
 
+    public List<TransactionDTO> getNTransactions(String accountNumber) {
+        return transactionDao.getNTransactions(accountNumber);
+    }
 }

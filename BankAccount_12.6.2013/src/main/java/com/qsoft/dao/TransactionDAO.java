@@ -18,4 +18,11 @@ public class TransactionDAO {
     public List<TransactionDTO> getAllTransaction(String accountNumber) {
         return null;
     }
+    public List<TransactionDTO> getAllTransactionsBetweenTime(String accountNumber,long timeStart,long timeEnd) {
+        return null;
+    }
+
+    public List<TransactionDTO> getNTransactions(String accountNumber) {
+        return null;
+    }
 }
