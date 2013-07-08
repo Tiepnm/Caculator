@@ -4,6 +4,7 @@ import com.qsoft.dto.BankAccountDTO;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -23,9 +24,18 @@ public class BankingAccountDAO
         this.connection = dataSource.getConnection();
     }
 
-    public BankAccountDTO save(BankAccountDTO accountNumber)
+    public BankAccountDTO save(BankAccountDTO bankAccountDTO) throws SQLException
     {
-        return null;
+        PreparedStatement ps = null;
+        String sql = "INSERT INTO SAVINGS_ACCOUNT(Account_Number,DESCRIPTION,BALANCE) values (?,?,?)";
+        ps = connection.prepareStatement(sql);
+        ps.setString(1, bankAccountDTO.getAccountNumber());
+        ps.setString(2, bankAccountDTO.getDescription());
+        ps.setDouble(3, bankAccountDTO.getBalance());
+        ps.execute();
+        bankAccountDTO = getAccount(bankAccountDTO.getAccountNumber());
+        return bankAccountDTO;
+
     }
 
     public BankAccountDTO getAccount(String accountNumber) throws SQLException

@@ -43,7 +43,14 @@ public class BankAccount {
     public BankAccountDTO openAccount(String accountNumber) {
         BankAccountDTO bankingAccountDTO = new BankAccountDTO();
         bankingAccountDTO.setAccountNumber(accountNumber);
-        bankingAccountDAO.save(bankingAccountDTO);
+        try
+        {
+            bankingAccountDAO.save(bankingAccountDTO);
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
         doTransaction(accountNumber, 0.0, "");
         return bankingAccountDTO;
     }
@@ -62,7 +69,14 @@ public class BankAccount {
 
     public void deposit(BankAccountDTO bankingAccountDTO, double amount) {
         bankingAccountDTO.setBalance(bankingAccountDTO.getBalance() + amount);
-        bankingAccountDAO.save(bankingAccountDTO);
+        try
+        {
+            bankingAccountDAO.save(bankingAccountDTO);
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+        }
         doTransaction(bankingAccountDTO.getAccountNumber(), amount, "Deposit");
 
     }
@@ -72,7 +86,14 @@ public class BankAccount {
             throw new RuntimeException("Exception With Draw");
         }
         bankAccountDTO.setBalance(bankAccountDTO.getBalance() - amount);
-        bankingAccountDAO.save(bankAccountDTO);
+        try
+        {
+            bankingAccountDAO.save(bankAccountDTO);
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
         doTransaction(bankAccountDTO.getAccountNumber(), -amount, "With Draw");
 
     }

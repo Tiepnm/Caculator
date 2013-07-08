@@ -58,20 +58,27 @@ public class TestBankingAccountDao
         databaseTester.setDataSet(dataSet);
         databaseTester.onSetup();
     }
-    @Test
-    public void testGetAccount() throws Exception {
-        BankingAccountDAO bankingAccountDAO = new BankingAccountDAO(dataSource());
-        BankAccountDTO account = bankingAccountDAO.getAccount("01234567890");
-
-        assertEquals("01234567890", account.getAccountNumber());
-    }
-
     private DataSource dataSource() {
         JdbcDataSource dataSource = new JdbcDataSource();
         dataSource.setURL(JDBC_URL);
         dataSource.setUser(USER);
         dataSource.setPassword(PASSWORD);
         return dataSource;
+    }
+    @Test
+    public void testOpenAccount() throws Exception {
+        BankingAccountDAO bankingAccountDAO = new BankingAccountDAO(dataSource());
+        BankAccountDTO model  = new BankAccountDTO("1234565454",323232.0);
+        BankAccountDTO account = bankingAccountDAO.save(model);
+
+        assertEquals("1234565454", account.getAccountNumber());
+    }
+    @Test
+    public void testGetAccount() throws Exception {
+        BankingAccountDAO bankingAccountDAO = new BankingAccountDAO(dataSource());
+        BankAccountDTO account = bankingAccountDAO.getAccount("01234567890");
+
+        assertEquals("01234567890", account.getAccountNumber());
     }
 
 }

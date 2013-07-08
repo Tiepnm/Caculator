@@ -1,4 +1,9 @@
-package com.qsoft.dto;
+package com.qsoft.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * Created with IntelliJ IDEA.
@@ -7,15 +12,23 @@ package com.qsoft.dto;
  * Time: 1:40 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BankAccountDTO {
+@Entity
+@Table(name = "saving_account")
+public class BankAccount
+{
+    @Id
+    @Column(name = "account_no", length = 255)
     private String accountNumber;
+    @Column(name = "balance")
     private double balance;
+    @Column(name = "description")
     private String description;
-    public BankAccountDTO()
+
+    public BankAccount()
     {
 
     }
-    public BankAccountDTO(String accountNumber, double balance)
+    public BankAccount(String accountNumber, double balance)
     {
         this.balance = balance;
         this.accountNumber = accountNumber;
@@ -46,4 +59,5 @@ public class BankAccountDTO {
     {
         this.description = description;
     }
+
 }
